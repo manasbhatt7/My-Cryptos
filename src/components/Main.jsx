@@ -2,11 +2,11 @@ import React from 'react'
 import CoinList from './CoinList';
 import CoinDetails from './CoinDetails';
 
-function Main({coins, selectedCoin}) {
+function Main({coins, selectedCoin, onSelectCoin}) {
     return(
         <main className="main">
   
-          <CoinList coins = {coins}/>
+          <CoinList coins = {coins} onSelectCoin={onSelectCoin}/>
   
           <div className="boxtwo">
             <h1 className='header'>My Cryptos</h1>

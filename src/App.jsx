@@ -8,10 +8,14 @@ function App() {
   const [coins, setCoins] = useState(coinData);
   const [selectedCoin, setSelectedCoin] = useState(null);
 
+  function handleSelectedCoin(coin){
+    setSelectedCoin(coin);
+  }
+
   return (
     <>
     <NavBar/>
-    <Main coins = {coins} selectedCoin = {selectedCoin}/>
+    <Main coins = {coins} selectedCoin = {selectedCoin} onSelectCoin = {handleSelectedCoin}/>
     </>
   )
 }
