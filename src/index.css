@@ -39,7 +39,6 @@ body {
   border-radius: 0.9rem;
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -77,9 +76,17 @@ body {
 }
 
 .header{
-  padding: 10px
 }
 
+.logom{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 10px;
+}
+.logom span {
+  font-size: 3.2rem;
+}
 
 .num-results {
   justify-self: end;

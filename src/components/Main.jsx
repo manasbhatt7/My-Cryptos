@@ -9,7 +9,10 @@ function Main({coins, selectedCoin, onSelectCoin}) {
           <CoinList coins = {coins} onSelectCoin={onSelectCoin}/>
   
           <div className="boxtwo">
+            <div className='logom'>
+            <span role="img">🪙</span>
             <h1 className='header'>My Cryptos</h1>
+            </div>
             {
               selectedCoin ? <CoinDetails selectedCoin={selectedCoin}/> : <h2>Select from the left drawer</h2>
             }
