@@ -165,3 +165,43 @@ body {
   align-items: center;
   gap: 0.8rem;
 }
+
+
+.container{
+  width: 300px;
+  height: 250px; 
+  background-color: var(--color-background-500);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 30px;
+  border: 1px solid grey;
+}
+
+.container img{
+  width: 50px;
+  height: 50px;
+  /* padding: 10px; */
+}
+
+.innerContainer{
+  display: flex;
+  flex-direction: column;
+  /* gap: 1.6rem; */
+  justify-content: space-between;
+}
+
+.sameline{
+  display: flex;  
+  align-items: flex-end;
+  gap: .6rem;
+  color: green;
+}
+
+.buyNsell{
+  display: flex;
+  gap: 3rem;
+}
+
+.text-warning{
+  color:#fa5252
+}
