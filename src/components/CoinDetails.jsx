@@ -10,7 +10,7 @@ function CoinDetails({selectedCoin}) {
         <div className="innerContainer">
             <div>
               <h1>{selectedCoin.Coin}</h1>
-              <h2>{selectedCoin.CoinAcr}</h2>
+              <h2 className="greyfont">{selectedCoin.CoinAcr}</h2>
             </div>
             <div>
               <div className={classNames.join(' ')}>
@@ -18,18 +18,18 @@ function CoinDetails({selectedCoin}) {
                 <h2>({selectedCoin.perc}%)</h2>
                 {selectedCoin.Value>0 ? (<div>🔼</div>):(<div>🔽</div>)}
               </div>  
-              <h3>CHANGE</h3>
+              <h3 className="greyfont">CHANGE</h3>
             </div>  
             <hr />
             <div className="buyNsell">
               <div>
                 <h2>{selectedCoin.Buy}</h2>
-                <h3>Buy</h3>
+                <h3 className="greyfont">Buy</h3>
               </div>
               <hr />
               <div>
                 <h2>{selectedCoin.Sell}</h2>
-                <h3>Sell</h3>
+                <h3 className="greyfont">Sell</h3>
               </div>
             </div>
         </div>

@@ -201,7 +201,7 @@ body {
   display: flex;  
   align-items: flex-end;
   gap: .6rem;
-  color: green;
+  color: rgb(4, 144, 4);
 }
 
 .buyNsell{
@@ -210,5 +210,9 @@ body {
 }
 
 .text-warning{
-  color:#fa5252
+  color:#da1212
+}
+
+.greyfont{
+  color: #04120451;
 }
